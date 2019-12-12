@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Contraseña {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+
+   System.out.println("Defina una contraseña");
+   int contraseña=sc.nextInt();
+   int desbloqueo;
+   int intentos=0;
+    System.out.println("Ingrese su contraseña de desbloqueo");
+   for(int x=0; x<3;x++){
+       desbloqueo=sc.nextInt();
+       if(desbloqueo!=contraseña){
+           intentos++;
+           System.out.println("La contraseña es incorrecta intento "+intentos);
+       }else{
+           System.out.println("Desbloqueado lince");
+       }
+   }
+   if(intentos==3){
+       System.out.println("Celular bloqueado par");
+   }
+       
+   
+   
+}
+    
+}
