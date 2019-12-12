@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Numero {
+public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("INGRESA UN NUMERO CUALQUIERA");
+double N= sc.nextDouble();
+if(N<0){
+System.out.println("  es negativo");
+}else{
+if(N==0){
+System.out.println(" es neutro");
+}else{
+if(N>0){
+System.out.println(" es positivo");
+}
+}
+}
+}
+}
